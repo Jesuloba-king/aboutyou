@@ -63,32 +63,36 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Colors.white,
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              // padding: EdgeInsets.only(top: 10),
-              // margin: const EdgeInsets.only(top: 10),
-              height: 450, width: 390,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                color: Colors.transparent,
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset("assets/images/loba.jpg",
-                  fit: BoxFit.cover,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                padding: EdgeInsets.only(top: 10),
+                // margin: const EdgeInsets.only(top: 10),
+                height: 500,
+                width: 400,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  color: Colors.transparent,
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image.asset("assets/images/loba.jpg",
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-            Text("This is Me \n"
-                "Me is Jayking",
-              style: GoogleFonts.roboto(
-                color: Colors.black,
-                fontSize: 48,
-                fontWeight: FontWeight.w600,
-                fontStyle: FontStyle.normal,),)
-          ],
+              Padding(padding: EdgeInsets.only(top: 10),),
+              Text("This is Me \n"
+                  "Me is Jayking",
+                style: GoogleFonts.roboto(
+                  color: Colors.black,
+                  fontSize: 48,
+                  fontWeight: FontWeight.w600,
+                  fontStyle: FontStyle.normal,),)
+            ],
+          ),
         ),
       ),
 
