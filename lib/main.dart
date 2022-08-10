@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -84,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Padding(padding: EdgeInsets.only(top: 10),),
-              Text("This is Me \n"
+              Text("This is Me, \n"
                   "Me is Jayking",
                 style: GoogleFonts.roboto(
                   color: Colors.black,
