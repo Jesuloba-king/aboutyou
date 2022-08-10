@@ -85,13 +85,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               Padding(padding: EdgeInsets.only(top: 10),),
-              Text("This is Me, \n"
-                  "Me is Jayking",
-                style: GoogleFonts.roboto(
-                  color: Colors.black,
-                  fontSize: 48,
-                  fontWeight: FontWeight.w600,
-                  fontStyle: FontStyle.normal,),)
+              Column(
+               mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(padding: EdgeInsets.only(top: 5, left: 5, right: 5),),
+                  Text("Life na like standing fan.\n"
+                    "E go blow one person, e go blow another person. \n"
+                    "Our prayer be say make nepa no take light if e reach our turn",
+                    style: GoogleFonts.roboto(
+                      color: Colors.black,
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600,
+                      fontStyle: FontStyle.normal,),),
+                ],
+              )
             ],
           ),
         ),
